@@ -9,3 +9,5 @@
 
 ## 개발 언어
 #### JAVA, ANDROID STUDIO
+
+## 주요 화면별 기능
