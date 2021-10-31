@@ -11,6 +11,6 @@
 #### JAVA, ANDROID STUDIO
 
 ### 주요 화면별 기능
-<img src="./intro.JPG" width="600px" height="700px" title="Intro"/>
+<img src="./intro.JPG" width="300px" height="500px" title="Intro"/>
 
 
