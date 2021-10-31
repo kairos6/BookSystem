@@ -11,6 +11,24 @@
 #### JAVA, ANDROID STUDIO
 
 ### 주요 화면별 기능
+#### Intro
 <img src="./intro.JPG" width="200px" height="400px" title="Intro"/>
+
+#### Main
+<img src="./main.JPG" width="200px" height="400px" title="Main"/>
+
+#### Book Detail
+<img src="./book detail.JPG" width="200px" height="400px" title="Book Detail"/>
+
+#### Search
+<img src="./search.JPG" width="200px" height="400px" title="Search"/>
+<img src="./searchresult.JPG" width="200px" height="400px" title="Search Result"/>
+
+#### MyBookList
+<img src="./mybooklist.JPG" width="200px" height="400px" title="MyBookList"/>
+
+
+
+
 
 
