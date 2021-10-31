@@ -17,6 +17,11 @@
 
 #### Main
 <img src="./main.JPG" width="200px" height="400px" title="Main"/>
+어플의 메인 화면<br>
+책을 검색하거나 나의 도서목록으로 이동할 수 있음<br>
+로고 이미지 클릭 시 메인화면으로 이동<br>
+입력 창에 책 제목 검색 후 검색 버튼 클릭 시 검색 결과 화면으로 이동<br>
+메인화면 버튼 클릭 시 메인화면으로 이동, 내 도서목록 이동 시 내 도서목록으로 이동<br>
 
 #### Book Detail
 <img src="./book detail.JPG" width="200px" height="400px" title="Book Detail"/>
