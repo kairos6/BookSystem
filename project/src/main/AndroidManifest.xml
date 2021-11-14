@@ -12,18 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App"
         android:usesCleartextTraffic="true">
-        <activity android:name=".NoSearchResultActivity">
-
-        </activity>
-        <activity android:name=".SearchResultActivity"></activity>
-        <activity android:name=".IntroActivity">
+        <activity android:name=".activity.MyBookListActivity"/>
+        <activity android:name=".activity.BookDetailActivity"></activity>
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.MainActivity" />
     </application>
 
 </manifest>

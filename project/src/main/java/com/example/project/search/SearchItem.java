@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.project.search;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -43,7 +43,7 @@ public class SearchItem {
     private String coverLargeUrl;
     @SerializedName("categoryId")
     @Expose
-    private String categoryId;
+    private int categoryId;
     @SerializedName("categoryName")
     @Expose
     private String categoryName;
@@ -171,11 +171,11 @@ public class SearchItem {
         this.coverLargeUrl = coverLargeUrl;
     }
 
-    public String getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(String categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 

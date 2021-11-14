@@ -1,5 +1,6 @@
-package com.example.project;
+package com.example.project.bestseller;
 
+import com.example.project.bestseller.BookResult;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

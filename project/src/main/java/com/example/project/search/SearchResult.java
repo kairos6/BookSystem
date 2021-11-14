@@ -1,10 +1,11 @@
-package com.example.project;
+package com.example.project.search;
 
 import java.util.List;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class BookResult {
+public class SearchResult {
 
     @SerializedName("title")
     @Expose
@@ -39,6 +40,9 @@ public class BookResult {
     @SerializedName("queryType")
     @Expose
     private String queryType;
+    @SerializedName("query")
+    @Expose
+    private String query;
     @SerializedName("searchCategoryId")
     @Expose
     private int searchCategoryId;
@@ -47,13 +51,13 @@ public class BookResult {
     private String searchCategoryName;
     @SerializedName("returnCode")
     @Expose
-    private int returnCode;
+    private String returnCode;
     @SerializedName("returnMessage")
     @Expose
     private String returnMessage;
     @SerializedName("item")
     @Expose
-    private List<Item> item = null;
+    private List<SearchItem> item = null;
 
     public String getTitle() {
         return title;
@@ -143,6 +147,14 @@ public class BookResult {
         this.queryType = queryType;
     }
 
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
     public int getSearchCategoryId() {
         return searchCategoryId;
     }
@@ -159,11 +171,11 @@ public class BookResult {
         this.searchCategoryName = searchCategoryName;
     }
 
-    public int getReturnCode() {
+    public String getReturnCode() {
         return returnCode;
     }
 
-    public void setReturnCode(int returnCode) {
+    public void setReturnCode(String returnCode) {
         this.returnCode = returnCode;
     }
 
@@ -175,11 +187,11 @@ public class BookResult {
         this.returnMessage = returnMessage;
     }
 
-    public List<Item> getItem() {
+    public List<SearchItem> getSearchItem() {
         return item;
     }
 
-    public void setItem(List<Item> item) {
+    public void setItem(List<SearchItem> item) {
         this.item = item;
     }
 

@@ -1,11 +1,11 @@
-package com.example.project;
+package com.example.project.bestseller;
 
 import java.util.List;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class SearchResult {
+public class BookResult {
 
     @SerializedName("title")
     @Expose
@@ -40,24 +40,21 @@ public class SearchResult {
     @SerializedName("queryType")
     @Expose
     private String queryType;
-    @SerializedName("query")
-    @Expose
-    private String query;
     @SerializedName("searchCategoryId")
     @Expose
-    private String searchCategoryId;
+    private int searchCategoryId;
     @SerializedName("searchCategoryName")
     @Expose
     private String searchCategoryName;
     @SerializedName("returnCode")
     @Expose
-    private String returnCode;
+    private int returnCode;
     @SerializedName("returnMessage")
     @Expose
     private String returnMessage;
     @SerializedName("item")
     @Expose
-    private List<SearchItem> item = null;
+    private List<Item> item = null;
 
     public String getTitle() {
         return title;
@@ -147,19 +144,11 @@ public class SearchResult {
         this.queryType = queryType;
     }
 
-    public String getQuery() {
-        return query;
-    }
-
-    public void setQuery(String query) {
-        this.query = query;
-    }
-
-    public String getSearchCategoryId() {
+    public int getSearchCategoryId() {
         return searchCategoryId;
     }
 
-    public void setSearchCategoryId(String searchCategoryId) {
+    public void setSearchCategoryId(int searchCategoryId) {
         this.searchCategoryId = searchCategoryId;
     }
 
@@ -171,11 +160,11 @@ public class SearchResult {
         this.searchCategoryName = searchCategoryName;
     }
 
-    public String getReturnCode() {
+    public int getReturnCode() {
         return returnCode;
     }
 
-    public void setReturnCode(String returnCode) {
+    public void setReturnCode(int returnCode) {
         this.returnCode = returnCode;
     }
 
@@ -187,11 +176,11 @@ public class SearchResult {
         this.returnMessage = returnMessage;
     }
 
-    public List<SearchItem> getItem() {
+    public List<Item> getItem() {
         return item;
     }
 
-    public void setItem(List<SearchItem> item) {
+    public void setItem(List<Item> item) {
         this.item = item;
     }
 

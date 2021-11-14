@@ -1,7 +1,5 @@
-package com.example.project;
+package com.example.project.bestseller;
 
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.ViewTarget;
+import com.example.project.R;
 
 import java.util.List;
 
@@ -20,7 +18,10 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
     private List<Item> items;
 
-    public BookAdapter(List<Item> items) {
+    private onClickSend clickSend;
+
+    public BookAdapter(List<Item> items , onClickSend send) {
+        this.clickSend = send;
         this.items = items;
     }
 
@@ -42,12 +43,14 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
         return items.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView title, description, categoryId, categoryName, author, publisher;
         private ImageView imageView;
 
+
         public ViewHolder(View itemView) {
             super(itemView);
+
             imageView = itemView.findViewById(R.id.bookImage);
             title = itemView.findViewById(R.id.bookTitle);
             //description = itemView.findViewById(R.id.description);
@@ -55,6 +58,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
             categoryId = itemView.findViewById(R.id.categoryId);
             categoryName = itemView.findViewById(R.id.categoryName);
             author = itemView.findViewById(R.id.author);
+
+
 
         }
 
@@ -71,6 +76,24 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
             categoryName.setText(item.getCategoryName());
             author.setText(item.getAuthor());
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    clickSend.onClickBody(item);
+                }
+            });
+
         }
+
     }
+
+    public interface onClickSend{
+        void onClickBody(Item item);
+    }
+
+//    public interface onclickSend{
+//        void onClickdelete
+//    }
+    //삭제 버튼 만들기
+
 }

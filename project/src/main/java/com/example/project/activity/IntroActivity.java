@@ -1,10 +1,12 @@
-package com.example.project;
+package com.example.project.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.project.R;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class IntroActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(IntroActivity.this , MainActivity.class);
                         startActivity(intent);
+                        finish();
             }
         }, 3000);
 
